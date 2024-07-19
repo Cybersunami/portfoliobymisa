@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Playwrite DE Grund", cursive;
+    font-family: "Roboto", sans-serif;
 }
 
 /*Nav bar for the web links */
@@ -47,5 +47,23 @@
     width: 500px;
     margin-top: 200px;
     margin-left: 300px;
-    
+}
+.resume-container {
+    margin-top: 2rem;
+}
+@media only screen and (max-width: 767px) {
+    /*Styles for mobile view*/
+body {
+    width: 400px;
+}
+.resume-container img {
+    width: 490px;
+    height: 900px;
+} 
+.header {
+    width: 28rem;
+}
+.resume-container {
+margin-top: 100px;
+}
 }

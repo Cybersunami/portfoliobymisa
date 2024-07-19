@@ -1,93 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/Contact.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/Contact.css" />
+  </head>
+  <body>
+    <!-- About Section Design -->
 
- <!-- About Section Design -->
-
-<body>
-    <header class="header">
+    <body>
+      <header class="header">
         <a href="#" class="logo">Portfolio</a>
-    
-     <!-- <i class="fa-thin fa-bars" id="menu icon" style="color: #000000;"></i> -->
-    
-     <nav class= "navbar">
-        <a href="Home.html" class="active">Home</a>
-        <a href="About.html">About</a>
-        <a href="Projects.html">Projects</a>
-        <a href="Contact.html">Contact</a>
 
-        </nav>
-    </header>     
-    
         <!-- <i class="fa-thin fa-bars" id="menu icon" style="color: #000000;"></i> -->
-    
-        <!DOCTYPE html>
-        <html lang="en">
+
+        <nav class="navbar">
+          <a href="Home.html" class="active">Home</a>
+          <a href="About.html">About</a>
+          <a href="Projects.html">Projects</a>
+          <a href="Contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <!-- <i class="fa-thin fa-bars" id="menu icon" style="color: #000000;"></i> -->
+
+      <!DOCTYPE html>
+      <html lang="en">
         <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Contact Us</title>
-            <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Contact Us</title>
+          <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+          />
         </head>
-        <body class="bg-gray-100">
-            <div class="container mx-auto px-4 py-8">
-                <form id="contact-form" onsubmit={submitForm(event)} class="max-w-lg mx-auto">
-                    <h1 class="text-3xl font-bold mb-4">Contact Me</h1>
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
-                        <input type="text" id="name" name="name" placeholder="type namehere"
-                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
-                        <input type="email" id="email" name="email" placeholder="type email here"
-                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div class="mb-4">
-                        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
-                        <textarea id="message" name="message" rows="5"
-                            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit"
-                            class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-300">Submit</button>
-                    </div>
-                </form>
-                <div id="confirmation-message" class="hidden text-center mt-4">
-                    <p class="text-xl text-green-600">Thank you! Your message has been sent.</p>
-                </div>
+        <body>
+          <div class="container mx-auto px-4 py-8">
+            <form method="POST" id="form" class="max-w-lg mx-auto">
+              <input
+                type="hidden"
+                name="access_key"
+                value="dfad683e-5575-4eaf-8a52-2573f18334b4"
+              />
+              <h1 class="text-3xl text-white font-bold mb-4">Contact Me</h1>
+              <div class="mb-4">
+                <label for="name" class="block text-white font-semibold mb-2"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="type namehere"
+                  class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="block text-white font-semibold mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="type email here"
+                  class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="message"
+                  class="block text-white font-semibold mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-300"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            <div id="confirmation-message" class="hidden text-center mt-4">
+              <p class="text-xl text-green-600">
+                Thank you! Your message has been sent.
+              </p>
             </div>
-        
-            <script>
-                 function submitForm(event) {
-                    event.preventDefault();
-        
-                    const name = document.getElementById("name").value;
-                    const email = document.getElementById("email").value;
-                    const message = document.getElementById("message").value;
-        
-                    // Replace this email with your actual email address
-                    const yourEmail = "misawilliams@icloud.com";
-        
-                    const mailtoLink = `mailto:$misawilliams@icloud.com?subject=Contact Form Submission&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`)}`;
-                    
-                    // Open the mailto link in a new window
-                    window.open(mailtoLink);
-        
-                    // Display the confirmation message
-                    document.getElementById("confirmation-message").classList.remove("hidden");
-                    
-                    // Reset the form
-                    document.getElementById("contact-form").reset();
-                }
-            </script>
+          </div>
+
+          <script>
+            const form = document.getElementById("form");
+
+            form.addEventListener("submit", function (e) {
+              e.preventDefault();
+              const formData = new FormData(form);
+              const object = Object.fromEntries(formData);
+              const json = JSON.stringify(object);
+
+              fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  Accept: "application/json",
+                },
+                body: json,
+              })
+                .then(async (response) => {
+                  let json = await response.json();
+                  if (response.status == 200) {
+                    document
+                      .getElementById("confirmation-message")
+                      .classList.remove("hidden");
+                  } else {
+                    console.log(response);
+                  }
+                })
+                .catch((error) => {
+                  console.log(error);
+                })
+                .then(function () {
+                  form.reset();
+                  setTimeout(() => {
+                    result.style.display = "none";
+                  }, 3000);
+                });
+            });
+          </script>
         </body>
-        </html>
-        
-        
+      </html>
+      <!-- // document.getElementById("confirmation-message").classList.remove("hidden"); -->
+    </body>
+  </body>
+</html>

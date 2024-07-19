@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Playwrite DE Grund", cursive;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Infinite Horizontal Branding */
@@ -261,6 +261,18 @@ span {
   padding: 20px;
   width: 70%;
   margin-left: 50px;
+  margin-top: -9rem;
 
 
 }
+@media only screen and (max-width: 767px) {
+  /* Styles for mobile*/
+  .home {
+  margin-top: -20rem;
+  }
+.About-content {
+  margin-top: -15rem;
+  /* margin-left: -15px; */
+}
+}
+

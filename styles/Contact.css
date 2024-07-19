@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Playwrite DE Grund", cursive;
+    font-family: "Roboto", sans-serif;
 }
 
 /*Nav bar for the web links */
@@ -26,7 +26,7 @@
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: #e7e7e7;
+    background: #fbfbfb;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,4 +43,5 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: hsl(221, 45%, 19%);
 }
