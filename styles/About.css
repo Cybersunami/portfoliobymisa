@@ -51,7 +51,7 @@
 .resume-container {
     margin-top: 2rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
     /*Styles for mobile view*/
 body {
     width: 400px;
