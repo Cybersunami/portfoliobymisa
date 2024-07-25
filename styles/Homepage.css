@@ -268,7 +268,10 @@ span {
 @media only screen and (max-width: 767px) {
   /* Styles for mobile*/
   .home {
-  margin-top: -20rem;
+  margin-bottom: 10rem;
+  }
+  .wrapper {
+    margin-bottom: 4rem;
   }
 .About-content {
   margin-top: -15rem;
